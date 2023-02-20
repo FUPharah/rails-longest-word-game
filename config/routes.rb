@@ -3,4 +3,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get '/new', to: 'games#new', as: :new
+  post '/score', to: 'games#score', as: :score
 end
+
+
+## how to generate 10 random letters in a grid
+# display the grid
+#add aform to add a guess
+#send it to the other page
+#
